@@ -1,9 +1,6 @@
-// components/charts/dashboard-top-countries-chart.tsx
 "use client";
-
 import * as React from "react";
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
-
 import {
   Card,
   CardContent,
@@ -34,6 +31,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
+// TODO: export as a chart?
 export function DashboardTopCountriesChart({ data }: DashboardTopCountriesChartProps) {
   return (
     <Card>

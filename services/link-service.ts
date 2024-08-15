@@ -1,4 +1,4 @@
-import ErrorWithStatus from "@/Exception/custom-error";
+import ErrorWithStatus from "@/exception/custom-error";
 import { db } from "@/lib/db";
 import { shortenLinkSchema, changeCustomSuffixSchema } from "@/schemas";
 import { z } from "zod";
@@ -43,8 +43,7 @@ export const getAllLinks = async (url: URL, userId: string) => {
     const totalPages = Math.ceil(totalLinks / limit);
 
     return {
-      success: true,
-      data: links,
+      data:links,
       pagination: {
         page,
         limit,
@@ -72,7 +71,7 @@ export const createLink = async (
         userId,
       },
     });
-    console.log(data);
+    
     return { success: true, data };
   } catch (error) {
     throw new ErrorWithStatus("Failed to create link", 500);
