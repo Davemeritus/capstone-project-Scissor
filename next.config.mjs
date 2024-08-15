@@ -27,19 +27,37 @@
 //   export default nextConfig;
 
 /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   async rewrites() {
+//     return [
+//       {
+//         source: '/api/auth/:path*',
+//         destination: '/api/auth/:path*', // This rewrite can be retained if needed for auth routes
+//       },
+//     ];
+//   },
+// };
+
+// export default nextConfig;
+
+
+
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/api/auth/:path*',
-        destination: '/api/auth/:path*', // This rewrite can be retained if needed for auth routes
+        source: "/api/auth/:path*",
+        destination: "/api/auth/:path*",
       },
     ];
+  },
+  experimental: {
+    serverComponentsExternalPackages: ["pino", "pino-pretty"],
   },
 };
 
 export default nextConfig;
-
 
 
 // /** @type {import('next').NextConfig} */
