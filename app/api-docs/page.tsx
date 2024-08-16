@@ -11,7 +11,7 @@ function ApiDocPage() {
   return (
     <PageContainer scrollable>
       <div className="App">
-        <API apiDescriptionUrl="https://raw.githubusercontent.com/davemeritus/trimr/main/openapi.yaml" />
+        <API apiDescriptionUrl="https://raw.githubusercontent.com/davemeritus/trimr/main/trimr-v1.yaml" />
       </div>
     </PageContainer>
   );
