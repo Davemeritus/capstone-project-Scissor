@@ -7,12 +7,11 @@ const API = dynamic(() => import("@stoplight/elements").then((x) => x.API), {
   ssr: false,
 });
 
-// link https://raw.githubusercontent.com/plutack/link-slice/main/openapi.yaml
 function ApiDocPage() {
   return (
     <PageContainer scrollable>
       <div className="App">
-        <API apiDescriptionUrl="https://raw.githubusercontent.com/plutack/nextjsauth-template/main/openapi.yaml" />
+        <API apiDescriptionUrl="https://raw.githubusercontent.com/davemeritus/trimr/main/openapi.yaml" />
       </div>
     </PageContainer>
   );
