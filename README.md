@@ -1,7 +1,8 @@
 # AltSchool of Backend Engineering (NodeJs) Tinyuka 2023 Capstone Project
 **Name:** Trimr-(Scissor Capstone) <br>
 **Live URL**: https://www.davemeritus.tech <br>
-**Live Api Docs**: https://www.davemeritus.tech//api-docs
+**Live Api Docs**: https://raw.githubusercontent.com/davemeritus/trimr/main/trimr-v1.yaml <br>
+- You can use https://editor.swagger.io/ for better visualization <br>
 
 ## Tools Used
 - [Nextjs](https://nextjs.org/)
