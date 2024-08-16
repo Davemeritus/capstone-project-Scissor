@@ -1,39 +1,21 @@
-import { useState, useEffect } from 'react';
-import { useSocket } from '@/components/layout/socket-provider';
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 import { DashboardData } from "@/types/dashboard";
 
+// maybe put this in an env
+
+const API_URL = "http://localhost:3000/api";
+
+const fetchDashboardData = async (): Promise<DashboardData> => {
+  const response = await axios.get(`${API_URL}/user/stats`);
+  const { data } = response.data;
+  return data;
+};
 
 export const useDashboardData = () => {
-  const [data, setData] = useState<DashboardData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
-  const { socket, isConnected } = useSocket();
-
-  useEffect(() => {
-    if (isConnected && socket) {
-      // Request initial data
-      socket.emit('getDashboardData');
-
-      // Listen for dashboard data updates
-      socket.on('dashboardData', (newData: DashboardData) => {
-        setData(newData);
-        setIsLoading(false);
-      });
-
-      // Listen for errors
-      socket.on('dashboardError', (err: string) => {
-        setError(new Error(err));
-        setIsLoading(false);
-      });
-    }
-
-    return () => {
-      if (socket) {
-        socket.off('dashboardData');
-        socket.off('dashboardError');
-      }
-    };
-  }, [socket, isConnected]);
-
-  return { data, isLoading, error };
+  return useQuery<DashboardData, Error>({
+    queryKey: ["dashboardData"],
+    queryFn: fetchDashboardData,
+    refetchInterval: 30000,
+  });
 };
