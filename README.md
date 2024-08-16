@@ -118,8 +118,10 @@
 
 ### User Experience Improvements
 - Additional routes utilizing WebSocket implementation for real-time data fetching.
+- Faster and Efficient method to load socket.io, Vercel messed it up during deployment
 - Enhanced caching, particularly on the **/dashboard/link** route.
 - Improved search functionality to allow users to find links without loading all pages.
+
 
 ## Acknowledgements
 
