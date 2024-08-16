@@ -9,7 +9,7 @@ info:
   version: '1.0'
   contact:
     name: Okunade David
-    url: 'https://www.davemeritus.tech/dashboard/'
+    url: 'https://www.davemeritus.tech/'
     email: davidokunade1@gmail.com
   summary: Authenticate User
   description: Trimr API documentation
@@ -23,7 +23,7 @@ tags:
   - name: User
     description: Operation related to users
 servers:
-  - url: 'https://www.davemeritus.tech/dashboard'
+  - url: 'https://www.davemeritus.tech/api'
     description: Production
   - url: 'http://localhost:3000/api'
     description: Development
