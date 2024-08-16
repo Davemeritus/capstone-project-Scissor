@@ -99,7 +99,7 @@ export function ShortenLinkFormBase({
           name="link"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>URL to shorten</FormLabel>
+              <FormLabel>URL to trim</FormLabel>
               <FormControl>
                 <Input
                   placeholder="https://example.com"
@@ -131,7 +131,7 @@ export function ShortenLinkFormBase({
           />
         )}
         <Button disabled={loading} className="w-full" type="submit">
-          Shorten Link
+          Trim Link
         </Button>
       </form>
     </Form>

@@ -205,7 +205,7 @@ export function ShortenLinkForm({
           </>
         )}
         <Button disabled={loading} className="ml-auto w-full" type="submit">
-          Shorten Link
+          Trim Link
         </Button>
       </form>
     </Form>
@@ -267,7 +267,7 @@ export function ShortenLinkForm({
   return (
     <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
       <PopoverTrigger asChild>
-        {triggerButton || <Button>Shorten Link</Button>}
+        {triggerButton || <Button>Trim Link</Button>}
       </PopoverTrigger>
       <PopoverContent className="w-80">
         {generatedLink ? resultContent : formContent}

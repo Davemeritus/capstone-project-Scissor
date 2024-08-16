@@ -92,8 +92,8 @@ import UserAuthForm from "@/components/forms/user-auth-form";
 import { HomeShortenLinkForm } from "@/components/forms/home-shorten-link-form";
 
 export const metadata: Metadata = {
-  title: "Scissor - URL Shortener",
-  description: "Shorten, customize, and track your URLs with Scissor.",
+  title: "Trimr - URL Shortener",
+  description: "Shorten, customize, and track your URLs with Trimr.",
 };
 
 export default function HomePage() {
@@ -118,29 +118,28 @@ export default function HomePage() {
             <line x1="14.47" y1="14.48" x2="20" y2="20" />
             <line x1="8.12" y1="8.12" x2="12" y2="12" />
           </svg>
-          Scissor
+          Trimr
         </div>
         <div className="relative z-20 mt-auto">
-          <h2 className="text-4xl font-bold mb-4">Brief is the new black</h2>
+          <h2 className="text-4xl font-bold mb-4">Trimr is the new bold</h2>
           <p className="text-xl mb-6">
-            Scissor is a powerful URL shortening tool designed to make your
+            Trimr is a powerful URL shortening tool designed to make your
             links as concise as possible.
           </p>
           <ul className="list-disc list-inside space-y-2">
-            <li>Create short, branded URLs</li>
-            <li>Generate QR codes for easy sharing</li>
-            <li>Track link performance with analytics</li>
-            <li>Manage your link history</li>
+            <li>Craft short, custom-branded links</li>
+            <li>Generate QR codes for effortless sharing</li>
+            <li>Monitor your link success with smart analytics</li>
+            <li>Easily manage your entire link portfolio</li>
           </ul>
         </div>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">
-              &ldquo;Scissor has revolutionized our marketing campaigns. The
-              custom URLs and analytics features are game-changers!&rdquo;
+              &ldquo;Trimr has supercharged our marketing! Custom URLs and cutting-edge analytics are our secret weapons!&rdquo;
             </p>
             <footer className="text-sm">
-              - Marketing Director, Talut Tech
+              - Chief Marketing Director, Dave Scofield
             </footer>
           </blockquote>
         </div>
@@ -152,12 +151,11 @@ export default function HomePage() {
               Create an account
             </h1>
             <p className="text-sm text-muted-foreground">
-              Sign up to access advanced features like custom domains, QR codes,
-              and analytics
+            Sign up for custom domains, QR codes, and premium analytics!
             </p>
           </div>
           <div className="w-full max-w-md mb-8">
-            <h2 className="text-2xl font-bold mb-4">Shorten Your URL</h2>
+            <h2 className="text-2xl font-bold mb-4">Trim Your URL</h2>
             <HomeShortenLinkForm />
           </div>
           <div className="w-full max-w-md">

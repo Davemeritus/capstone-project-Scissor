@@ -27,7 +27,7 @@ export default function Sidebar({ className }: SidebarProps) {
       )}
     >
       <div className="hidden p-5 pt-10 lg:block">
-        <Link href={"https://github.com/plutack/scissor"} target="_blank">
+        <Link href={"https://github.com/Davemeritus/trimr"} target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
